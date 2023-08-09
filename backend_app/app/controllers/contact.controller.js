@@ -13,6 +13,18 @@ const createContact = async (req, res) => {
   }
 }
 
+// const createContact = async (req, res) => {
+//   const contactData = req.body // Assuming req.body is a single contact object
+
+//   try {
+//     const contact = await Contact.create(contactData) // Use the create method
+//     res.send('Contact inserted successfully.')
+//   } catch (error) {
+//     console.log('Error while inserting data:', error)
+//     res.status(500).send('Error while inserting data.')
+//   }
+// }
+
 // Contact fetch all operation
 const getAllContacts = async (req, res) => {
   try {
@@ -24,6 +36,7 @@ const getAllContacts = async (req, res) => {
   }
 }
 
+// Contact fetch by name operation
 const getContactByName = async (req, res) => {
   const { name } = req.params
 
