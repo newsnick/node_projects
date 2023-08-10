@@ -1,6 +1,21 @@
+p {
+  margin-top: -22px !important;
+}
+
+input {
+  padding-left: 150px;
+}
+
 .card-header {
   border: 7px dashed lightseagreen;
   margin: 0.2em;
+}
+
+.custom-body {
+  margin: 0.2em;
+  border: 7px dashed goldenrod;
+  border-radius: 5px;
+  width: 415px !important;
 }
 
 .card-body {
@@ -9,13 +24,17 @@
   border-radius: 5px;
 }
 
+.card-title {
+  padding-bottom: 10px !important;
+}
+
 .container {
   background-color: white;
   --bs-gutter-x: 0 !important;
 }
 
 .create-card {
-  width: 475px;
+  width: 423px;
 }
 
 .create-form {

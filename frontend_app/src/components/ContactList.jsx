@@ -488,7 +488,7 @@ const ContactList = () => {
             <div className="create-form">
               {' '}
               <div className="card create-card">
-                <div className="card-body">
+                <div className="card-body custom-body">
                   <h5 className="card-title">Create New Contact</h5>
                   <p>
                     Name:{' '}
@@ -527,12 +527,25 @@ const ContactList = () => {
                     />
                   </p>
                   <button
-                    className="btn btn-primary"
+                    className="btn btn-primary w-25 m-3"
                     onClick={() => {
                       handleSaveNewContact()
                     }}
                   >
                     Save
+                  </button>
+                  <button
+                    className="btn btn-secondary w-25"
+                    onClick={() => {
+                      setCreatingContact(false)
+                      setShowSuccessMessage(false)
+                      setNewContactName('')
+                      setNewContactAddress('')
+                      setNewContactEmail('')
+                      setNewContactPhone(null)
+                    }}
+                  >
+                    Cancel
                   </button>
                 </div>
               </div>
