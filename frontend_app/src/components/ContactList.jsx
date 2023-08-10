@@ -423,12 +423,13 @@ const ContactList = () => {
 
   const handleSearchByName = (searchName) => {
     setSearchName(searchName)
-    const accessToken =
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY5MTY1MjQ0NywiZXhwIjoxNjkxNjY2ODQ3fQ.SvmRJP7u5F7F7aIHEsIC2ySEw6runPYQaa2U0Pea0WQ'
+    // const accessToken =
+    //   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY5MTY1MjQ0NywiZXhwIjoxNjkxNjY2ODQ3fQ.SvmRJP7u5F7F7aIHEsIC2ySEw6runPYQaa2U0Pea0WQ'
 
     fetch(`http://localhost:8080/api/contacts/${searchName}`, {
       headers: {
-        Authorization: `Bearer ${accessToken}`,
+        // Authorization: `Bearer ${accessToken}`,
+        Authorization: 'none',
       },
     })
       .then((response) => response.json())
