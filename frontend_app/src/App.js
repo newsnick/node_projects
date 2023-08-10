@@ -2,13 +2,12 @@ import './App.css'
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import ContactList from './components/ContactList'
-import SearchBar from './components/SearchBar'
 
 function App() {
   return (
     <Router>
       <div className="container">
-        <nav className="navbar d-flex bg-body-tertiary">
+        <nav className="navbar d-flex bg-primary">
           <ul>
             <li>
               <div className="leftContainer">
@@ -27,9 +26,7 @@ function App() {
                 </Link>
               </div>
             </li>
-            <li>
-              <SearchBar />
-            </li>
+            <li>{/* <SearchBar /> */}</li>
           </ul>
         </nav>
         <Routes>
