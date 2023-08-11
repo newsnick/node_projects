@@ -1,9 +1,13 @@
 p {
-  margin-top: -22px !important;
+  padding: 0;
+}
+
+.textCreate {
+  margin-top: -50px !important;
+  padding: 21px;
 }
 
 input {
-  padding-left: 150px;
 }
 
 .card-header {
@@ -24,8 +28,12 @@ input {
   border-radius: 5px;
 }
 
+.custom-title {
+  padding-bottom: 30px !important;
+}
+
 .card-title {
-  padding-bottom: 10px !important;
+  padding-bottom: 15px !important;
 }
 
 .container {
@@ -41,6 +49,11 @@ input {
   display: flex;
   justify-content: center;
   width: 100vw;
+}
+
+.customField {
+  width: 280px;
+  margin-top: 5px;
 }
 
 .leftHeader {

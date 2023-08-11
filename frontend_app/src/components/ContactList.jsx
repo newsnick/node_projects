@@ -489,37 +489,41 @@ const ContactList = () => {
               {' '}
               <div className="card create-card">
                 <div className="card-body custom-body">
-                  <h5 className="card-title">Create New Contact</h5>
-                  <p>
+                  <h5 className="custom-title">Create New Contact</h5>
+                  <p className="textCreate">
                     Name:{' '}
                     <input
+                      className="customField"
                       type="text"
                       name="name"
                       value={newContactName}
                       onChange={(e) => setNewContactName(e.target.value)}
                     />
                   </p>
-                  <p>
+                  <p className="textCreate">
                     Address:{' '}
                     <input
+                      className="customField"
                       type="text"
                       name="address"
                       value={newContactAddress}
                       onChange={(e) => setNewContactAddress(e.target.value)}
                     />
                   </p>
-                  <p>
+                  <p className="textCreate">
                     Email:{' '}
                     <input
+                      className="customField"
                       type="email"
                       name="email"
                       value={newContactEmail}
                       onChange={(e) => setNewContactEmail(e.target.value)}
                     />
                   </p>
-                  <p>
+                  <p className="textCreate">
                     Phone:{' '}
                     <input
+                      className="customField"
                       type="tel"
                       name="phone"
                       value={newContactPhone}
