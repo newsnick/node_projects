@@ -26,7 +26,6 @@ function App() {
                 </Link>
               </div>
             </li>
-            <li>{/* <SearchBar /> */}</li>
           </ul>
         </nav>
         <Routes>
